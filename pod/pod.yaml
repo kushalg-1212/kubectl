@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: xperlean
+spec:
+  containers:
+  - name: private-reg-container
+    image: registry.xperlean.com/xperlean/back-end-application-inesgroup>
+  imagePullSecrets:
+  - name: regcred
